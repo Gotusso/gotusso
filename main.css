@@ -1,7 +1,6 @@
 @import 'https://fonts.googleapis.com/css?family=Muli|Roboto:400,500';
 
 html {
-
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-size: 1em;
     line-height: 1.5;
@@ -9,7 +8,7 @@ html {
     padding: 4em 1em;
     max-width: 50em;
     color: #555;
-
+    position: relative;
 }
 
 h1 {
@@ -48,6 +47,15 @@ a {
 ::selection {
     background: #b3d4fc;
     text-shadow: none;
+}
+
+#wrapper {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    width: 50%;
+    height: 33.33%;
 }
 
 /* ==========================================================================
