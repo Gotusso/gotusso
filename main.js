@@ -1,3 +1,13 @@
+// Try to avoid basic spam bots by forcing them to evaluate JS code to
+// get the email.
+window.reachMeOut = function() {
+    window.open('mailto:' + window.atob('Z290dXNzb0BnbWFpbC5jb20='), '_blank');
+};
+
+window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+ga('create','UA-XXXXX-Y','auto');ga('send','pageview');
+
+// Background animation
 (function tesseratto() {
     var scene = new THREE.Scene();
 
