@@ -4,8 +4,9 @@ window.reachMeOut = function() {
     window.open('mailto:' + window.atob('Z290dXNzb0BnbWFpbC5jb20='), '_blank');
 };
 
-window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-ga('create','UA-XXXXX-Y','auto');ga('send','pageview');
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);};
+gtag('js', new Date());
 
 // Background animation
 (function tesseratto() {
