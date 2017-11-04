@@ -49,7 +49,7 @@ ga('create','UA-XXXXX-Y','auto');ga('send','pageview');
 
     scene.add(mesh);
 
-    var wrapper = document.getElementById('wrapper');
+    var wrapper = document.getElementById('background');
     var canvas = document.getElementById('canvas');
     var bbox = wrapper.getBoundingClientRect();
     var renderer = new THREE.WebGLRenderer({
