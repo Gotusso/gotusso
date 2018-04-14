@@ -1,0 +1,84 @@
+@import 'https://fonts.googleapis.com/css?family=Muli|Roboto:400,500';
+
+html {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 0 auto;
+    padding: 4em 1em;
+    max-width: 50em;
+    color: #555;
+    position: relative;
+}
+
+h1 {
+    font-family: "Muli", "Helvetica", "Arial", sans-serif;
+    font-size: 3em;
+    margin: 0.5em 0 0;
+}
+
+h2, h3 {
+    margin-top: 1em;
+    padding-top: 1em;
+}
+
+h1, h2, h3, strong {
+    color: #333;
+}
+
+ul, p {
+    margin: 1em 0;
+}í
+
+a, a:link, a:visited {
+    color: #e81c4f;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    text-decoration: underline;
+}
+
+.section {
+    border-left: 3px solid #69c;
+    padding-left: 1em;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+#links {
+    position: absolute;
+    top: 0;
+    height: 3em;
+    line-height: 3em;
+}
+
+#links a {
+    margin-right: 0.5em;
+}
+
+#background {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    width: 50%;
+    height: 33.33%;
+}
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+    }
+}
