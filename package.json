@@ -10,11 +10,18 @@
     "url": "git+https://github.com/Gotusso/gotusso.github.io.git"
   },
   "scripts": {
+    "clean": "rm -rf dist",
     "build": "webpack --mode=production"
   },
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
     "copy-webpack-plugin": "^4.5.1",
     "webpack": "^4.5.0",
     "webpack-cli": "^2.0.14"
+  },
+  "dependencies": {
+    "three": "^0.91.0"
   }
 }
