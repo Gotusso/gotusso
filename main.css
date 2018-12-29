@@ -17,6 +17,13 @@ h1 {
     margin: 0.5em 0 0;
 }
 
+
+header > h2 {
+  color: #e81c4f;
+  margin-top: 0;
+  padding-top: 0;
+}
+
 h2, h3 {
     margin-top: 1em;
     padding-top: 1em;
@@ -75,10 +82,29 @@ a:hover, a:active {
 }
 
 @media print {
+    .screen-only {
+      display: none;
+    }
+
+    html {
+      font-size: 0.8em;
+    }
+
+    header > h1 {
+      margin-top: 0;
+    }
+
+    #links {
+      right: 0;
+    }
+
+    .position {
+      page-break-inside: avoid;
+    }
+
     *,
     *:before,
     *:after {
         background: transparent !important;
-        color: #000 !important;
     }
 }
